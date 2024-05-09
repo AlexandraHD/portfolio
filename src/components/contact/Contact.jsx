@@ -6,11 +6,11 @@ export const Contact = () => {
 
   return (
     <>
-        <div className="section-header">
+        <section id="contact" className="section-header">
             <div className="line-left" />
             <div className="header-title">Contact me</div>
             <div className="line-right" />
-        </div>
+        </section>
         <p>You can send me a message. I will contact you as soon as possible!</p>
 
         {/* FOrm */}

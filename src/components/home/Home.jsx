@@ -48,7 +48,7 @@ export const Home = () => {
                 {
                     lastProjects.map(project => (
                         <LastProjectsCard
-                            key={project.image}
+                            key={project.id}
                             {...project}
                         />
                     ))

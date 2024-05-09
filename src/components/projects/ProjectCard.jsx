@@ -11,7 +11,10 @@ export const ProjectCard = ({...project}) => {
           <div className="flip-card-back">
             <h3>{project.name}</h3>
             <p>{project.description}</p>
-            <a href={project.url}>{project.goto}</a>
+            <div className="flip-card-buttons">
+              <a href={project.url}>{project.goto}</a>
+              <a href={project.url2}>{project.goto2}</a>
+            </div>
           </div>
         </div>
       </div>
