@@ -28,7 +28,7 @@ export const Projects = () => {
         </div>
 
         {/* Projects cards */}
-        <div className="flip-card-container">
+        <div className="flip-card-container project-carouse">
           {
             filteredProjects.map(project => (
               <ProjectCard
