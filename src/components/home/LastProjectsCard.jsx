@@ -5,7 +5,9 @@ export const LastProjectsCard = ({...project}) => {
 
   return (
     <div className="last-container">
-      <img src={imgUrl} alt={project.name} />
+      <a href={project.url} target="_blank">
+        <img src={imgUrl} alt={project.name} />
+      </a>
     </div>
   )
 }

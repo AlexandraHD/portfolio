@@ -3,7 +3,7 @@ export const lastProjects = [
         name: 'Portfolio',
         skill: 'design',
         image: 'portfolio',
-        url: ''
+        url: 'https://www.figma.com/file/JNqgIVPGkHEAJAbZhrbxUb/Portfolio?type=design&node-id=207%3A6520&mode=design&t=0ouUMtHiUo23mFVc-1'
     },
     {
         name: 'Safe',
@@ -126,7 +126,7 @@ export const projects = [
         skill: 'design',
         description: 'Design of my portfolio',
         image: 'portfolio',
-        url: '',
+        url: 'https://www.figma.com/file/JNqgIVPGkHEAJAbZhrbxUb/Portfolio?type=design&node-id=207%3A6520&mode=design&t=0ouUMtHiUo23mFVc-1',
         goto: 'See figma',
         url2: '',
         goto2: 'See prototype'

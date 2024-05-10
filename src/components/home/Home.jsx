@@ -6,53 +6,47 @@ import { SkillsCard } from "./SkillsCard"
 export const Home = () => {
   return (
     <>
-        <div className="mainHeader-container">
-            <h2>ALEXANDRA HERNANDEZ</h2>
-            <h1>
-                FRONT-END DEVELOPER
-                <br />& UX/UI DESIGNER
-            </h1>
-        </div>
-
-        <div className="skills-group" >
-            <h3>Programming skills</h3>
-            <div className="skills-container">
-                {
-                    programmingSkills.map(skill => (
-                        <SkillsCard
-                            key={skill.image}
-                            {...skill}
-                        />
-                    ))
-                }
+        <div className="skills-group-container">
+            <div className="skills-group" >
+                <h3>Programming skills</h3>
+                <div className="skills-container">
+                    {
+                        programmingSkills.map(skill => (
+                            <SkillsCard
+                                key={skill.image}
+                                {...skill}
+                            />
+                        ))
+                    }
+                </div>
             </div>
-        </div>
 
-        <div className="skills-group">
-            <h3>UX/UI skills</h3>
-            <div className="skills-container">
-                {
-                    designSkills.map(skill => (
-                        <SkillsCard
-                            key={skill.image}
-                            {...skill}
-                        />
-                    ))
-                }
+            <div className="skills-group">
+                <h3>UX/UI skills</h3>
+                <div className="skills-container">
+                    {
+                        designSkills.map(skill => (
+                            <SkillsCard
+                                key={skill.image}
+                                {...skill}
+                            />
+                        ))
+                    }
+                </div>
             </div>
-        </div>
 
-        <div className="skills-group">
-            <h3>Last Projects</h3>
-            <div className="skills-container">
-                {
-                    lastProjects.map(project => (
-                        <LastProjectsCard
-                            key={project.id}
-                            {...project}
-                        />
-                    ))
-                }
+            <div className="skills-group" id="last-projects">
+                <h3>Last Projects</h3>
+                <div className="skills-container">
+                    {
+                        lastProjects.map(project => (
+                            <LastProjectsCard
+                                key={project.id}
+                                {...project}
+                            />
+                        ))
+                    }
+                </div>
             </div>
         </div>
         
