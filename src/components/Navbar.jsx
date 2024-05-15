@@ -17,7 +17,7 @@ export const Navbar = () => {
     <div className="nav-container">
         <div className="nav-icons">
             <a href="https://github.com/AlexandraHD" target="_blank">
-                <img src="../icons/github.svg" alt="" />
+                <img src="icons/github.svg" alt="" />
             </a>
             <a href="https://www.behance.net/alexahd" target="_blank">
                 <img src="icons/behance.svg" alt="" />

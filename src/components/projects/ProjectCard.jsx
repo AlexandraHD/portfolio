@@ -1,6 +1,6 @@
 
 export const ProjectCard = ({...project}) => {
-  const imageUrl = `/thumbnails/${project.image}.png`
+  const imageUrl = `thumbnails/${project.image}.png`
   return (
     <>
       <div className="flip-card">

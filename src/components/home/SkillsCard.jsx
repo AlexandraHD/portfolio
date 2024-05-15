@@ -1,7 +1,7 @@
 
 export const SkillsCard = ({...skill}) => {
 
-  const skillUrl = `/skills/${skill.image}.svg`
+  const skillUrl = `skills/${skill.image}.svg`
 
   return (
     <>
