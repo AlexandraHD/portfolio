@@ -405,7 +405,7 @@ p {
 }
 
 footer {
-  background-image: url('../public/background/background-footer.png');
+  background-image: url('/background/background-footer.png');
   margin-top: 80px;
   display: flex;
   justify-content: center;
