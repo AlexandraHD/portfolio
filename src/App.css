@@ -33,9 +33,14 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 28px;
+  margin-bottom: 48px;
 }
 
 .carousel-par {
+  text-align: center;
+}
+
+.carousel-container p {
   text-align: center;
 }
 
@@ -224,6 +229,7 @@ h3 {
   height: 75px;
   border-radius: 8px;
   cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .projects-btns {
@@ -317,6 +323,7 @@ h3 {
 .flip-card-back h3 {
   font-size: var(--mont20);
   color: var(--white);
+  margin: 8px 0;
 }
 
 .flip-card-buttons {

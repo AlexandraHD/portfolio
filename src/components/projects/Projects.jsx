@@ -30,7 +30,7 @@ export const Projects = () => {
       {
         isSmallScreen 
         ?
-        <div>
+        <div className="carousel-container">
           <ProjectsCarousel selectedSkill={selectedSkill} />
           <p>Clic on the card to see the description.</p>
         </div>
