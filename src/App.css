@@ -6,7 +6,7 @@ html {
 
 body {
   background-color: var(--white);
-  background-image: url('/background/Background-desktop.png');
+  background-image: url('background/Background-desktop.png');
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
