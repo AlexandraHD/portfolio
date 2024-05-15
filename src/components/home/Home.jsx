@@ -1,7 +1,7 @@
-import { lastProjects } from "../data/projectsList"
-import { designSkills, programmingSkills } from "../data/skillsList"
-import { LastProjectsCard } from "./LastProjectsCard"
-import { SkillsCard } from "./SkillsCard"
+import { lastProjects } from "../data/projectsList";
+import { designSkills, programmingSkills } from "../data/skillsList";
+import { LastProjectsCard } from "./LastProjectsCard";
+import { SkillsCard } from "./SkillsCard";
 
 export const Home = () => {
   return (

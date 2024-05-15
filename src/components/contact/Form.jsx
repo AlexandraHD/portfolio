@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { useForm } from "../../hooks/useForm"
+import { useForm } from "../../hooks/useForm";
 import { Popup } from "./Popup";
 
 export const Form = () => {

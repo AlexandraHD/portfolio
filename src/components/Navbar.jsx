@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
 export const Navbar = () => {
@@ -52,7 +52,7 @@ export const Navbar = () => {
             null
             :
             <div id="btn-pdf">
-                <a href="../../public/documents/prueba.pdf" download target="_blank">
+                <a href="documents/CV-AlexandraH-UXUIDev.pdf" download target="_blank">
                     <button className="btn-cv">Download CV</button>
                 </a>
             </div>

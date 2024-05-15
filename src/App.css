@@ -292,13 +292,11 @@ h3 {
   border-radius: 8px;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: transparent;
   box-shadow: 4px 4px 6px var(--deepBlue);
 }
 
-/* Style the back side */
 .flip-card-back {
   background-color: var(--brown);
   color: white;
@@ -422,7 +420,7 @@ footer span {
 
 
 /* Media queries */
-/* Phone */
+/* Phone & Tablet */
 
 @media screen and (max-width: 900px) {
   body {
@@ -454,6 +452,7 @@ footer span {
     color: var(--white);
   }
 
+  /* Navbar */
   .nav-container {
     padding: 8px;
     justify-content: end;
@@ -462,6 +461,7 @@ footer span {
 
   .menu-toggle {
     display: block;
+    position: relative;
   }
 
   .menu-toggle img {
@@ -471,12 +471,26 @@ footer span {
 
   .nav-links {
     display: none;
+    position: absolute;
+  }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    padding: 12px;
+    gap: 20px;
+    background: rgba(46, 72, 65, 1);
+    top: 30px;
+    right: 24px;
+    box-shadow: 1px 1px 500px black;
   }
 
   .nav-icons {
     align-items: center;
   }
 
+  /* Headers */
   .header-h1 {
     width: 90%;
     margin: 0 8px 40px 8px;
@@ -525,14 +539,11 @@ footer span {
 
   .header-title {
     font-size: var(--mont20);
+    width: 30%;
   }
 
   .line-left .line-right {
     width: 40%;
-  }
-
-  .header-title {
-    width: 30%;
   }
 
   .projects-btns {

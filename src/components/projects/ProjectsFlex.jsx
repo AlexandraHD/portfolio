@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { ProjectCard } from "./ProjectCard";
-import { projects } from "../data/projectsList"
+import { projects } from "../data/projectsList";
 
 export const ProjectsFlex = ({selectedSkill}) => {
 

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 import { ProjectsFlex } from "./ProjectsFlex";
 import { useMediaQuery } from 'react-responsive';
 import { ProjectsCarousel } from "./ProjectsCarousel";
@@ -30,10 +30,10 @@ export const Projects = () => {
       {
         isSmallScreen 
         ?
-        <>
+        <div>
           <ProjectsCarousel selectedSkill={selectedSkill} />
           <p>Clic on the card to see the description.</p>
-        </>
+        </div>
         : 
         <ProjectsFlex selectedSkill={selectedSkill} />
       }
