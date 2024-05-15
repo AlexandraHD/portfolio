@@ -1,6 +1,7 @@
 import { useState } from "react"
-import { projects } from "../data/projectsList"
-import { ProjectCard } from "./ProjectCard"
+import { ProjectsFlex } from "./ProjectsFlex";
+import { useMediaQuery } from 'react-responsive';
+import { ProjectsCarousel } from "./ProjectsCarousel";
 
 export const Projects = () => {
 
@@ -11,9 +12,7 @@ export const Projects = () => {
     setSelectedSkill(skill);
   };
 
-  const filteredProjects = selectedSkill
-    ? projects.filter((project) => project.skill === selectedSkill)
-    : projects;
+  const isSmallScreen = useMediaQuery({ maxWidth: 900 });
 
   return (
     <>
@@ -27,17 +26,19 @@ export const Projects = () => {
           <button onClick={() => handleFilterBySkill("programming")} className={selectedSkill === "programming" ? "active" : ""}>Programming</button>
         </div>
 
-        {/* Projects cards */}
-        <div className="flip-card-container project-carouse">
-          {
-            filteredProjects.map(project => (
-              <ProjectCard
-                key={project.id}
-                {...project}
-              />
-            ))
-          }
-        </div>
+      {/* Projects cards */}
+
+      {
+        isSmallScreen 
+        ?
+        <>
+          <ProjectsCarousel selectedSkill={selectedSkill} />
+          <p>Clic on the card to see the description.</p>
+        </>
+        : 
+        <ProjectsFlex selectedSkill={selectedSkill} />
+      }
+
     </>
   )
 }
