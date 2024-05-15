@@ -17,19 +17,19 @@ export const Navbar = () => {
     <div className="nav-container">
         <div className="nav-icons">
             <a href="https://github.com/AlexandraHD" target="_blank">
-                <img src="../public/icons/github.svg" alt="" />
+                <img src="../icons/github.svg" alt="" />
             </a>
             <a href="https://www.behance.net/alexahd" target="_blank">
-                <img src="../public/icons/behance.svg" alt="" />
+                <img src="/icons/behance.svg" alt="" />
             </a>
             <a href="www.linkedin.com/in/alexandrahernandez-dev" target="_blank">
-                <img src="../public/icons/linkedin.svg" alt="" />
+                <img src="/icons/linkedin.svg" alt="" />
             </a>
         </div>
 
         {/* Icon Menu */}
         <div className="menu-toggle" onClick={toggleMenu}>
-            <img src="../public/icons/icon-menuH.svg" alt="Menu Icon" />
+            <img src="icons/icon-menuH.svg" alt="Menu Icon" />
         </div>
 
         {/* Menu */}

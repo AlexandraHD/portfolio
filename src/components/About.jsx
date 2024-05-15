@@ -17,7 +17,7 @@ export const About = () => {
             {
               isSmallScreen && (
                 <div id="btn-pdf">
-                  <a href="../../public/documents/prueba.pdf" download target="_blank">
+                  <a href="/documents/prueba.pdf" download target="_blank">
                       <button className="btn-cv">Download CV</button>
                   </a>
                 </div>

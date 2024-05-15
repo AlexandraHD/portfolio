@@ -426,7 +426,7 @@ footer span {
 
 @media screen and (max-width: 900px) {
   body {
-    background-image: url('../public/background/Background-phone.png');
+    background-image: url('/background/Background-phone.png');
   }
 
   .mainHeader-container {
