@@ -26,8 +26,7 @@ export const Projects = () => {
           <button onClick={() => handleFilterBySkill("programming")} className={selectedSkill === "programming" ? "active" : ""}>Programming</button>
         </div>
 
-      {/* Projects cards */}
-
+      {/* Project cards */}
       {
         isSmallScreen 
         ?

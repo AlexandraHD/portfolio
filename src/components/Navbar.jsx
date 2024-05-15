@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useMediaQuery } from "react-responsive";
 
 export const Navbar = () => {
     
@@ -7,6 +8,9 @@ export const Navbar = () => {
     const toggleMenu = () => {
         setMenuOpen(!menuOpen)
     }
+
+    const isSmallScreen = useMediaQuery({ maxWidth: 900 });
+
     
   return (
     // Icons
@@ -42,11 +46,18 @@ export const Navbar = () => {
                 </a>
             </ul>
         </div>
-        <div id="btn-pdf">
-            <a href="../../public/documents/prueba.pdf" download target="_blank">
-                <button className="btn-cv">Download CV</button>
-            </a>
-        </div>
+        {
+            isSmallScreen
+            ?
+            null
+            :
+            <div id="btn-pdf">
+                <a href="../../public/documents/prueba.pdf" download target="_blank">
+                    <button className="btn-cv">Download CV</button>
+                </a>
+            </div>
+        }
+        
     </div>
   )
 }

@@ -456,6 +456,8 @@ footer span {
 
   .nav-container {
     padding: 8px;
+    justify-content: end;
+    gap: 40px
   }
 
   .menu-toggle {
@@ -475,10 +477,6 @@ footer span {
     align-items: center;
   }
 
-  #btn-pdf {
-    display: none;
-  }
-
   .header-h1 {
     width: 90%;
     margin: 0 8px 40px 8px;
@@ -487,12 +485,21 @@ footer span {
   .header-text {
     order: -1;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 44px;
   }
 
   .header-text p {
     color: var(--white);
     font-size: var(--mont16);
     text-align: center;
+  }
+
+  .btn-cv {
+    margin-top: 16px;
+    margin-left: 0;
   }
 
   .home-about-container {
