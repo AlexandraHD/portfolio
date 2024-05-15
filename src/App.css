@@ -166,7 +166,7 @@ h3 {
 }
 
 .skillCard:hover .skill-name {
-  color: var(--orange); /* Cambia el color al hacer hover */
+  color: var(--orange);
   filter: brightness(150%);
 }
 
@@ -405,7 +405,7 @@ p {
 }
 
 footer {
-  background-image: url('/background/background-footer.png');
+  background-image: url('../background/background-footer.png');
   margin-top: 80px;
   display: flex;
   justify-content: center;
@@ -426,7 +426,7 @@ footer span {
 
 @media screen and (max-width: 900px) {
   body {
-    background-image: url('/background/Background-phone.png');
+    background-image: url('../background/Background-phone.png');
   }
 
   .mainHeader-container {

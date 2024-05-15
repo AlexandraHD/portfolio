@@ -20,10 +20,10 @@ export const Navbar = () => {
                 <img src="../icons/github.svg" alt="" />
             </a>
             <a href="https://www.behance.net/alexahd" target="_blank">
-                <img src="/icons/behance.svg" alt="" />
+                <img src="icons/behance.svg" alt="" />
             </a>
-            <a href="www.linkedin.com/in/alexandrahernandez-dev" target="_blank">
-                <img src="/icons/linkedin.svg" alt="" />
+            <a href="https://www.linkedin.com/in/alexandrahernandez-dev" target="_blank">
+                <img src="icons/linkedin.svg" alt="" />
             </a>
         </div>
 
