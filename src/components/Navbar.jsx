@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
 export const Navbar = () => {
@@ -10,6 +10,30 @@ export const Navbar = () => {
     }
 
     const isSmallScreen = useMediaQuery({ maxWidth: 900 });
+
+    const menuRef = useRef(null);
+
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+            // Si el menú está abierto y el clic se produce fuera del menú
+            if (menuOpen && !menuRef.current.contains(event.target)) {
+                setMenuOpen(false); // Cierra el menú
+            }
+        };
+
+        // Agrega el manejador de eventos al documento
+        document.addEventListener("mousedown", handleOutsideClick);
+
+        // Remueve el manejador de eventos al desmontar el componente
+        return () => {
+            document.removeEventListener("mousedown", handleOutsideClick);
+        };
+    }, [menuOpen]);
+
+    const handleMenuItemClick = () => {
+        // Cierra el menú cuando se selecciona una opción del menú
+        setMenuOpen(false);
+    };
 
     
   return (
@@ -34,14 +58,14 @@ export const Navbar = () => {
 
         {/* Menu */}
         <div>
-            <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-                <a href="#about" className="nav-link">
+            <ul className={`nav-links ${menuOpen ? 'open' : ''}`} ref={menuRef}>
+                <a href="#about" className="nav-link" onClick={handleMenuItemClick}>
                     <li>About me</li>
                 </a>
-                <a href="#projects" className="nav-link">
+                <a href="#projects" className="nav-link" onClick={handleMenuItemClick}>
                     <li>Projects</li>
                 </a>
-                <a href="#contact" className="nav-link">
+                <a href="#contact" className="nav-link" onClick={handleMenuItemClick}>
                     <li>Contact me</li>
                 </a>
             </ul>
